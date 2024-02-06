@@ -41,7 +41,8 @@ class BookingCalendar extends StatelessWidget {
       this.startingDayOfWeek = StartingDayOfWeek.monday,
       this.disabledDays,
       this.disabledDates,
-      this.lastDay})
+      this.lastDay,
+      this.hideButton})
       : super(key: key);
 
   ///for the Calendar picker we use: [TableCalendar]
@@ -130,6 +131,9 @@ class BookingCalendar extends StatelessWidget {
   ///True if you want to hide your break time from the calendar, and the explanation text as well
   final bool? hideBreakTime;
 
+  ///True if you want to hide booking button from the calendar,
+  final bool? hideButton;
+
   ///for localizing the calendar, String code to locale property. (intl format) See: [https://pub.dev/packages/table_calendar#locale]
   final String? locale;
 
@@ -185,6 +189,7 @@ class BookingCalendar extends StatelessWidget {
         disabledDays: disabledDays,
         lastDay: lastDay,
         disabledDates: disabledDates,
+        hideButton: hideButton,
       ),
     );
   }
