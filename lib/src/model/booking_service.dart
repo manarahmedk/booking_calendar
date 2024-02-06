@@ -6,7 +6,7 @@ class BookingService {
 
   /// The userName of the currently logged user
   /// who will start the new booking
-  final String? userName;
+  String? userName;
 
   /// The userEmail of the currently logged user
   /// who will start the new booking
@@ -14,7 +14,7 @@ class BookingService {
 
   /// The userPhoneNumber of the currently logged user
   /// who will start the new booking
-  final String? userPhoneNumber;
+  String? userPhoneNumber;
 
   /// The id of the currently selected Service
   /// for this service will the user start the new booking
