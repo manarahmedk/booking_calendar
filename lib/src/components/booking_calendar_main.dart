@@ -48,7 +48,7 @@ class BookingCalendarMain extends StatefulWidget {
     this.disabledDays,
     this.disabledDates,
     this.lastDay,
-    this.hideButton,
+    this.hideButton=false,
   }) : super(key: key);
 
   final Stream<dynamic>? Function(
@@ -339,7 +339,7 @@ class _BookingCalendarMainState extends State<BookingCalendarMain> {
                     height: 16,
                   ),
                   Visibility(
-                    visible: widget.hideButton==true,
+                    visible: widget.hideButton==false,
                     child: CommonButton(
                       text: widget.bookingButtonText ?? 'BOOK',
                       onTap: () async {
