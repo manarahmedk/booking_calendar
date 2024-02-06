@@ -42,7 +42,7 @@ class BookingCalendar extends StatelessWidget {
       this.disabledDays,
       this.disabledDates,
       this.lastDay,
-      this.hideButton})
+      this.hideButton=false})
       : super(key: key);
 
   ///for the Calendar picker we use: [TableCalendar]
